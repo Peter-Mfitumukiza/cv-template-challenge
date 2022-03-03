@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&family=Poppins&family=Roboto&display=swap');
 *{
     margin: 0;
     padding: 0;
@@ -9,23 +10,75 @@ body{
     justify-content: center;
     height: 100%;
     width: 100vw;
+    font-family:'Poppins', sans-serif;
+    padding: 2rem;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    width: 12px;               /* width of the entire scrollbar */
+}
+  
+body::-webkit-scrollbar-track {
+    background: #f1f1f1;        /* color of the tracking area */
+}
+  
+body::-webkit-scrollbar-thumb {
+    background-color: #888;    /* color of the scroll thumb */
+    border-radius: 20px;       /* roundness of the scroll thumb */
+    border: 3px solid #f1f1f1;  /* creates padding around scroll thumb */
 }
 
 .top__container{
     display: flex;
     max-width: 900px;
     width: 100%;
+    border-radius: 6px;
+    border: 3px solid #dbdbdb;
 }
-.main__content__container{
-    background-color: aqua;
-    height: 100vh;
-    width: 80%;
-    border-radius: 0 5px 5px 0;
-}
+
 .years__container{
-    background-color: #0E2D55;
+    background-color: #102D55;
     height: 100vh;
     width: 20%;
     border-radius: 5px 0 0 5px;
+}
 
+.main__content__container{
+    height: 100vh;
+    width: 80%;
+    border-radius: 0 5px 5px 0;
+    padding: 1rem .8rem;
+
+}
+.main__content__container h1{
+    color:#102D55;
+    font-weight: bolder;
+    font-size: 35px;
+    margin-bottom: 0;
+}
+
+.main__content__container h2{
+    color:#2C486C;
+    font-weight: normal;
+    font-size: 20px;
+}
+
+div.links{
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 13px;
+}
+div.link{
+    width: 50%;
+    margin-top: .5rem;
+}
+.links i{
+    color: white;
+    background-color: #102D55;
+    padding: 5px;
+    border-radius: 50%;
+    font-size: 12px;
+    display: inline-block;
+    margin-right: .5rem;
 }
