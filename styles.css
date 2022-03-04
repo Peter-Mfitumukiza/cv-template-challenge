@@ -3,7 +3,6 @@
 :root{
     --main_blue: #102D55;
 }
-
 *{
     margin: 0;
     padding: 0;
@@ -13,11 +12,8 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100%;
-    width: 100vw;
     font-family:'Poppins', sans-serif;
     padding: 2rem;
-    overflow-x: hidden;
     font-size: 13px;
 }
 body::-webkit-scrollbar {
@@ -31,21 +27,17 @@ body::-webkit-scrollbar-thumb {
     border-radius: 20px;       /* roundness of the scroll thumb */
     border: 3px solid #f1f1f1;  /* creates padding around scroll thumb */
 }
-
 .top__container{
     display: flex;
     max-width: 900px;
-    width: 100%;
     border-radius: 10px;
     border: 3px solid #dbdbdb;
 }
-
 .years__container{
     background-color: var(--main_blue);
     width: 20%;
     border-radius: 5px 0 0 5px;
 }
-
 .main__content__container{
     width: 80%;
     border-radius: 0 5px 5px 0;
@@ -95,9 +87,6 @@ div.line__text__container{
 .line__container{
     width: max-content;
     margin-right: .5rem;
-}
-.text__container{
-    /* width: 93%; */
 }
 
 h1.primary__heading{
@@ -168,4 +157,15 @@ div.line{
 .line__container .fa-circle{
     font-size: 10px;
     z-index: 100;
+}
+.years__container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 1rem;
+}
+.years__container p{
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
 }
