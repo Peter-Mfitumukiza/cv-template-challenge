@@ -1,4 +1,4 @@
-const name = document.querySelector("#name");
+const name = document.getElementById("name");
 
 function generateRandomColor(){
     let maxVal = 0xFFFFFF;
@@ -10,5 +10,5 @@ function generateRandomColor(){
 }
 
 const changeColor = () => {
-    document.documentElement.style.setProperty("--blue", `${generateRandomColor()}`)
+    document.documentElement.style.setProperty("--main_blue", `${generateRandomColor()}`)
 }
