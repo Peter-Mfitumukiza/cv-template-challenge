@@ -1,5 +1,3 @@
-const name = document.getElementById("name");
-
 function generateRandomColor(){
     let maxVal = 0xFFFFFF;
     let randomNumber = Math.random() * maxVal;
